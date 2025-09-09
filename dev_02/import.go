@@ -16,5 +16,5 @@ func main() {
 	defer resp.Body.Close()
 
 	fmt.Println("HTTP Response Status:", resp.Status)
-	fmt.Println(resp.TLS)
+	fmt.Println(resp.TLS.PeerCertificates)
 }
